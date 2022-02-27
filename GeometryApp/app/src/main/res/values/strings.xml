@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Geometry4me</string>
+    <string name="welcome"> Welcome to Geometry4me!</string>
+    <string name="choose_a_geometric_object">Choose a geometric shape</string>
+    <string name="_2_dimensional">2-Dimensional</string>
+    <string name="rectangle">Rectangle</string>
+    <string name="circle">Circle</string>
+    <string name="triangle">Triangle</string>
+    <string name="_3_dimensional">3-Dimensional</string>
+    <string name="sphere">Sphere</string>
+    <string name="rect_prism">Rect. Prism</string>
+    <string name="cube">Cube</string>
+    <string name="pyramid">Pyramid</string>
+    <string name="cylinder">Cylinder</string>
+    <string name="cone">Cone</string>
+    <string name="exit">Exit</string>
+    <string name="circle_radius_text">Radius:</string>
+    <string name="circle_radius_value">6</string>
+    <string name="circle_circumference_text">Circumference = 2 * \u03C0 * Radius</string>
+    <string name="circle_circumference_value">37.7</string>
+    <string name="calculate">Calculate</string>
+    <string name="circle_diameter_value">12</string>
+    <string name="circle_diameter_text">Diameter = 2 * Radius</string>
+    <string name="circle_area_text">Area = π * Radius\u00B2</string>
+    <string name="circle_area_value">113.1</string>
+    <string name="back">Back</string>
+    <string name="rectangle_base_title">Base:</string>
+    <string name="rectangle_base_value">4</string>
+    <string name="rectangle_height_title">Height:</string>
+    <string name="rectangle_height_value">4</string>
+    <string name="rectangle_perimeter_text">Perimeter = 2 * (Height + Base)</string>
+    <string name="rectangle_perimeter_value">16</string>
+    <string name="rectangle_diagonal_text">Diagonal = \u221A (Base\u00B2 + Height\u00B2 )</string>
+    <string name="rectangle_diagonal_value">5.65685</string>
+    <string name="rectangle_area_text">Area = Base * Height</string>
+    <string name="rectangle_area_value">16</string>
+    <string name="triangle_base_value">4</string>
+    <string name="triangle_height_value">2.6</string>
+    <string name="triangle_height_title">Height = (1/2) * \u221A (3) * Base</string>
+    <string name="triangle_area_title">Area = (1/2) * Base * Height</string>
+    <string name="triangle_area_value">10.4</string>
+    <string name="sphere_surface_area_value">452.39</string>
+    <string name="sphere_surface_area_text">Surface Area = 4 * π * Radius\u00B2</string>
+    <string name="sphere_radius_text">Radius:</string>
+    <string name="sphere_radius_value">6</string>
+    <string name="sphere_diameter_text">Diameter = 2 * Radius</string>
+    <string name="sphere_diameter_value">12</string>
+    <string name="sphere_volume_text">Volume = (4/3) * π * Radius\u00B3</string>
+    <string name="sphere_volume_value">904.78</string>
+    <string name="prism_length_title">Length:</string>
+    <string name="prism_length_value">4</string>
+    <string name="prism_height_title">Height:</string>
+    <string name="prism_height_value">4</string>
+    <string name="prism_width_title">Width:</string>
+    <string name="prism_width_field">4</string>
+    <string name="prism_surface_area_text">Surface Area = 2 * [(Length * Width) + (Length * Height) + (Height * Width)]</string>
+    <string name="prism_surface_area_value">96</string>
+    <string name="prism_diagonal_text">Diagonal = \u221A(Length\u00B2 + Height\u00B2 + Width\u00B2)</string>
+    <string name="prism_diagonal_value">6.93</string>
+    <string name="prism_volume_text">Volume = Length * Width * Height</string>
+    <string name="prism_volume_value">64</string>
+    <string name="pyramid_base_title">Base:</string>
+    <string name="pyramid_base_value">4</string>
+    <string name="pyramid_height_title">Height:</string>
+    <string name="pyramid_height_value">6</string>
+    <string name="pyramid_lateral_area_text">Lateral Area = Base * \u221A(Base\u00B2 + (4 * Height\u00B2))</string>
+    <string name="pyramid_lateral_area_value">50.6</string>
+    <string name="pyramid_surface_area_title">Surface Area = Base\u00B2 + 2 * Base * \u221A([Base\u00B2 / 4] + Height\u00B2)</string>
+    <string name="pyramid_surface_area_value">66.6</string>
+    <string name="pyramid_volume_title">Volume = Base\u00B2 * (Height / 3)</string>
+    <string name="pyramid_volume_value">32</string>
+    <string name="cylinder_radius_title">Radius:</string>
+    <string name="cylinder_radius_value">4</string>
+    <string name="cylinder_height_title">Height:</string>
+    <string name="cylinder_height_value">6</string>
+    <string name="cylinder_base_text">Base Area = \u03C0 * Radius\u00B2</string>
+    <string name="cylinder_base_value">50.27</string>
+    <string name="cylinder_lateral_title">Lateral Area = 2 * \u03C0 * Radius * Height</string>
+    <string name="cylinder_lateral_value">150.8</string>
+    <string name="cylinder_area_text">Surface Area = (2 * \u03C0 * Radius * Height) + (2 * \u03C0 * Radius\u00B2)</string>
+    <string name="cylinder_area_value">251.33</string>
+    <string name="cylinder_volume_title">Volume = \u03C0 * Radius \u00B2 * Height</string>
+    <string name="cylinder_volume_value">301.59</string>
+    <string name="cone_radius_title">Radius:</string>
+    <string name="cone_radius_value">4</string>
+    <string name="cone_height_title">Height</string>
+    <string name="cone_height_value">6</string>
+    <string name="cone_base_text">Base Area = \u03C0 * Radius\u00B2</string>
+    <string name="cone_base_value">50.27</string>
+    <string name="cone_lateral_title">Lateral Area = \u03C0 * Radius * \u221A(Height\u00B2 + Radius\u00B2)</string>
+    <string name="cone_lateral_value">90.62</string>
+    <string name="cone_area_text">Surface Area = (\u03C0 * Radius\u00B2) + (\u03C0 * Radius * \u221A[Height\u00B2 + Radius\u00B2])</string>
+    <string name="cone_area_value">140.88</string>
+    <string name="cone_volume_title">Volume = (1/3) * \u03C0 * Radius\u00B2 * Height</string>
+    <string name="cone_volume_value">100.53</string>
+    <string name="main">Main</string>
+</resources>

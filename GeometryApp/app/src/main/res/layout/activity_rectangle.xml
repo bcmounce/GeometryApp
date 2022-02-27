@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/rectanglegradient"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".RectangleActivity">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="330dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rectangle" />
+
+        <TextView
+            android:id="@+id/rectangle_base_title"
+            style="@style/component_title"
+            android:layout_marginTop="8dp"
+            android:text="@string/rectangle_base_title"
+            app:layout_constraintEnd_toStartOf="@+id/rectangle_base_field"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <EditText
+            android:id="@+id/rectangle_base_field"
+            android:layout_width="194dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="numberDecimal"
+            android:text="@string/rectangle_base_value"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/rectangle_height_title"
+            android:layout_width="113dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="@string/rectangle_height_title"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toStartOf="@+id/rectangle_height_field"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_base_title" />
+
+        <EditText
+            android:id="@+id/rectangle_height_field"
+            android:layout_width="194dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:text="@string/rectangle_height_value"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_base_field" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="Calculate"
+            android:text="@string/calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_height_field" />
+
+        <TextView
+            android:id="@+id/rectangle_perimeter_title"
+            style="@style/formula_line2"
+            android:text="@string/rectangle_perimeter_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculate" />
+
+        <TextView
+            android:id="@+id/rectangle_perimeter_field"
+            style="@style/value_line2"
+            android:layout_marginTop="16dp"
+            android:text="@string/rectangle_perimeter_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_perimeter_title" />
+
+        <TextView
+            android:id="@+id/rectangle_diagonal_title"
+            style="@style/formula_line"
+            android:layout_width="252dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/rectangle_diagonal_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_perimeter_field" />
+
+        <TextView
+            android:id="@+id/rectangle_diagonal_field"
+            style="@style/value_line3"
+            android:layout_marginTop="16dp"
+            android:text="@string/rectangle_diagonal_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_diagonal_title" />
+
+        <TextView
+            android:id="@+id/rectangle_area_title"
+            style="@style/formula_line"
+            android:layout_width="253dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/rectangle_area_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_diagonal_field" />
+
+        <TextView
+            android:id="@+id/rectangle_area_field"
+            style="@style/value_line3"
+            android:layout_width="171dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/rectangle_area_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_area_title" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="Back"
+            android:text="@string/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_area_field" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

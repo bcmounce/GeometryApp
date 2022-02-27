@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/circlegradient"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:onClick="Calculate"
+        tools:context=".CircleActivity">
+
+        <TextView
+            android:id="@+id/circle_area_value"
+            android:layout_width="171dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="@string/circle_area_value"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circle_area_text" />
+
+        <TextView
+            android:id="@+id/circle_area_text"
+            android:layout_width="253dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:bufferType="normal"
+            android:gravity="center"
+            android:text="@string/circle_area_text"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circle_circumference_value" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="381dp"
+            android:layout_height="239dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/circle" />
+
+        <TextView
+            android:id="@+id/circle_radius_title"
+            android:layout_width="82dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="@string/circle_radius_text"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toStartOf="@+id/circle_radius_field"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/circle_radius_field"
+            android:layout_width="171dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:text="@string/circle_radius_value"
+            android:textColor="@color/text_color"
+            app:layout_constraintStart_toStartOf="@+id/circle_calculate_button"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/circle_diameter_text"
+            android:layout_width="253dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="@string/circle_diameter_text"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circle_calculate_button" />
+
+        <TextView
+            android:id="@+id/circle_diameter_value"
+            style="@style/value_line"
+            android:text="@string/circle_diameter_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circle_diameter_text" />
+
+        <Button
+            android:id="@+id/circle_calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Calculate"
+            android:text="@string/calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circle_radius_field" />
+
+        <TextView
+            android:id="@+id/circle_circumference_text"
+            android:layout_width="253dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:bufferType="normal"
+            android:gravity="center"
+            android:text="@string/circle_circumference_text"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circle_diameter_value" />
+
+        <TextView
+            android:id="@+id/circle_circumference_value"
+            android:layout_width="171dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="@string/circle_circumference_value"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circle_circumference_text" />
+
+        <Button
+            android:id="@+id/circle_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Back"
+            android:text="@string/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circle_area_value" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

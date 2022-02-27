@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/trianglegradient"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".TriangleActivity">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="352dp"
+            android:layout_height="239dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/triangle" />
+
+        <TextView
+            android:id="@+id/triangle_base_title"
+            style="@style/component_title"
+            android:layout_width="82dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/rectangle_base_title"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <EditText
+            android:id="@+id/triangle_base_field"
+            style="@style/value_line"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/triangle_base_value"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/triangle_base_title"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <Button
+            android:id="@+id/triangle_calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="Calculate"
+            android:text="@string/calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/triangle_base_field" />
+
+        <TextView
+            android:id="@+id/triangle_height_text"
+            style="@style/formula_line2"
+            android:layout_width="253dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/triangle_height_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/triangle_calculate_button" />
+
+        <TextView
+            android:id="@+id/triangle_height_field"
+            style="@style/formula_line"
+            android:layout_width="171dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/triangle_height_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/triangle_height_text" />
+
+        <TextView
+            android:id="@+id/triangle_area_text"
+            style="@style/formula_line"
+            android:layout_width="253dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/triangle_area_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/triangle_height_field" />
+
+        <TextView
+            android:id="@+id/triangle_area_field"
+            style="@style/formula_line"
+            android:layout_width="171dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/triangle_area_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/triangle_area_text" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="Back"
+            android:text="@string/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/triangle_area_field" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

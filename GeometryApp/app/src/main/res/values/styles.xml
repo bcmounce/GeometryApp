@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="value_line">
+        <item name="android:layout_width">171dp</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:ems">10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="formula_line">
+        <item name="android:layout_width">253dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="formula_line2" parent="formula_line">
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="value_line2" parent="value_line">
+        <item name="android:layout_width">171dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="value_line3" parent="value_line2">
+        <item name="android:layout_width">171dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="component_title">
+        <item name="android:layout_width">113dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_marginStart">38dp</item>
+        <item name="android:layout_marginLeft">38dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+</resources>

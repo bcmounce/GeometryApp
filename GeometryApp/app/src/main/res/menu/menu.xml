@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuMain"
+        android:title="@string/main" />
+    <item
+        android:id="@+id/menuCircle"
+        android:title="@string/circle" />
+    <item
+        android:id="@+id/menuRectangle"
+        android:title="@string/rectangle" />
+    <item
+        android:id="@+id/menuTriangle"
+        android:title="@string/triangle" />
+    <item
+        android:id="@+id/menuSphere"
+        android:title="@string/sphere" />
+    <item
+        android:id="@+id/menuRectPrism"
+        android:title="@string/rect_prism" />
+    <item
+        android:id="@+id/menuPyramid"
+        android:title="@string/pyramid" />
+    <item
+        android:id="@+id/menuCylinder"
+        android:title="@string/cylinder" />
+    <item
+        android:id="@+id/menuCone"
+        android:title="@string/cone" />
+</menu>

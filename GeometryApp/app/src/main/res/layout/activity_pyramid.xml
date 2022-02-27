@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/pyramidgradient"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".RectangleActivity">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="330dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pyramid" />
+
+        <TextView
+            android:id="@+id/pyramid_base_title"
+            style="@style/component_title"
+            android:layout_marginTop="8dp"
+            android:text="@string/pyramid_base_title"
+            app:layout_constraintEnd_toStartOf="@+id/pyramid_base_field"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <EditText
+            android:id="@+id/pyramid_base_field"
+            android:layout_width="194dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="numberDecimal"
+            android:text="@string/pyramid_base_value"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/pyramid_height_title"
+            android:layout_width="113dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="@string/pyramid_height_title"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toStartOf="@+id/pyramid_height_field"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_base_title" />
+
+        <EditText
+            android:id="@+id/pyramid_height_field"
+            android:layout_width="194dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:text="@string/pyramid_height_value"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_base_field" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="Calculate"
+            android:text="@string/calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_height_field" />
+
+        <TextView
+            android:id="@+id/pyramid_lateral_area_title"
+            style="@style/formula_line2"
+            android:layout_height="56dp"
+            android:text="@string/pyramid_lateral_area_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculate" />
+
+        <TextView
+            android:id="@+id/pyramid_lateral_area_field"
+            style="@style/value_line2"
+            android:text="@string/pyramid_lateral_area_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_lateral_area_title" />
+
+        <TextView
+            android:id="@+id/pyramid_surface_area_title"
+            style="@style/formula_line"
+            android:layout_width="252dp"
+            android:layout_height="56dp"
+            android:text="@string/pyramid_surface_area_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_lateral_area_field" />
+
+        <TextView
+            android:id="@+id/pyramid_surface_area_field"
+            style="@style/value_line3"
+            android:layout_marginTop="16dp"
+            android:text="@string/pyramid_surface_area_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_surface_area_title" />
+
+        <TextView
+            android:id="@+id/pyramid_volume_title"
+            style="@style/formula_line"
+            android:layout_width="253dp"
+            android:layout_height="28dp"
+            android:text="@string/pyramid_volume_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_surface_area_field" />
+
+        <TextView
+            android:id="@+id/pyramid_volume_field"
+            style="@style/value_line3"
+            android:layout_width="171dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/pyramid_volume_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_volume_title" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="Back"
+            android:text="@string/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_volume_field" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
